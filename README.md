@@ -1,4 +1,4 @@
-# toncoin_graph-flet
+# toncoin_chart-flet
 
 ```
 python3 -m venv venv
