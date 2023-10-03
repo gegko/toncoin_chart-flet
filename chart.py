@@ -25,8 +25,10 @@ r = requests.get(
     headers=headers
 )
 yearly_data = r.json()
-dt = [datetime.fromtimestamp(dt / 1000).date() \
-      .strftime('%b') for dt, _ in yearly_data['prices']]
+dt = [
+    datetime.fromtimestamp(dt / 1000).date().strftime('%b')
+    for dt, _ in yearly_data['prices']
+]
 data_frame = pd.DataFrame(dt, columns=['month']) \
     .drop_duplicates(keep='first')
 date_data = zip(
