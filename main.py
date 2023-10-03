@@ -13,7 +13,7 @@ def chart_container():
             blur_style=ft.ShadowBlurStyle.OUTER,
             color=ft.colors.BLACK26,
         ),
-        width=9000,
+        width=1000,
         height=275,
         margin=ft.margin.symmetric(horizontal=125),
         border_radius=10,
